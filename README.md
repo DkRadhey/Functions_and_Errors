@@ -1,14 +1,17 @@
-# Functions_and_Errors
-This solidity program is to demonstrate the functioning of error handling functions in solidity. Use of revert(), require() and assert() is demonstrated in this program.
+# Voting Smart Contract
+This Solidity program is a simple contract that demonstrates the use of require(), assert(), and revert() statements in Solidity.The purpose of the contract is to demonstrate the error handling while creation and updation of voting candidate using require(), assert() and revert().
 
-# Execution
-In this program there is a variable of data type mapping named balances to keep a track of balance in the account. Secondly there are three functions:
+# Description
+This contract simulates a voting eligibility system. Users can set their age and voting card status, and then check if they are eligible for a voting based on these details. The contract uses Solidity's require(), assert(), and revert() statements to enforce rules and validate conditions.
 
-# 1st function (deposit)
-To deposit some amount in the account i.e address and amount. We used require() method to handle errors in this function.
+# Getting Started
+Executing Program
+To run this program, you can use Remix, an online Solidity IDE. To get started, go to the Remix website at Remix Ethereum IDE.
 
-# 2nd function (withdraw)
-To withdraw some amount from the account, used revert method to handle errors in this function.
+Once you are on the Remix website, create a new file by clicking on the "+" icon in the left-hand sidebar. Save the file with a .sol extension (e.g., voting.sol). Copy and paste the following code into the file:
 
-# 3rd function (transfers)
-Taking three arguments, address1, address2 and the amount to be transferred from address1 to address2, and used assert method to handle errors.
+To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to "0.8.0" (or another compatible version), and then click on the "Compile voting.sol" button.
+
+Once the code is compiled, you can deploy the contract by clicking on the "Deploy & Run Transactions" tab in the left-hand sidebar. Select the "Voting" contract from the dropdown menu, and then click on the "Deploy" button.
+
+Once the contract is deployed, you can interact with it by calling the setAge(), setVotingCard(), and checkEligibility() functions. Set your age and voting card status first, and then check your eligibility for voting.
