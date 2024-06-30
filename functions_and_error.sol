@@ -1,28 +1,33 @@
-
 // SPDX-License-Identifier: MIT
 
-pragma solidity ^0.8.26;
+pragma solidity ^0.8.0;
 
-contract Project {
+contract Voting {
+    mapping(address => uint) public age;
+    mapping(address => bool) public ownsVotingCard;
 
-    mapping (address=>int) public balances;
+    function setAge(uint _age) public {
+        require(_age > 0 && _age < 120, "Invalid age provided.");
+
+        age[msg.sender] = _age;
+    }
+
+    function setVotingCard(bool _ownsCard) public {
+        ownsVotingCard[msg.sender] = _ownsCard;
+    }
+
+    function checkEligibility() public view returns (bool) {
+        uint userAge = age[msg.sender];
+        bool userCard = ownsVotingCard[msg.sender];
+
+        require(userAge > 0, "Age is not set.");
+
     
-    function deposit(address add,int amt) public {
-        require(amt>1, "Amount is lesser than the fees.");
-        balances[add]=balances[add]+amt-1;
-    }
-
-    function withdraw(address add, int amt) public {
-        if (amt>balances[add]) {
-            revert("Cannot withdraw more than balance.");
-        } else {
-            balances[add]=balances[add]-amt;
+        if (userAge < 18) {
+            revert("You are not eligible for a voting.");
         }
-    }
 
-    function transfer(address add1,address add2,int amt) public {
-        assert(balances[add1]>=amt);
-        balances[add1]-=amt;
-        balances[add2]+=amt;
+        assert(userCard == true);
+        return true;
     }
 }
